@@ -7,8 +7,18 @@ package bangundatar;
 
 /**
  *
- * @author ASUS
+ * @author ASUS Toyib h.
  */
-public class PersegiPanjang {
+public class PersegiPanjang extends BangunDatar{
+
+    public double panjang, lebar;
+    public double hitungLuas(){
+        double luas = panjang * lebar;
+        return luas;
+    }
     
+    public double hitungKeliling(){
+        double keliling = 2 * (panjang + lebar);
+        return keliling;
+    }
 }

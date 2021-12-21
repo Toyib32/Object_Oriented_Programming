@@ -7,8 +7,19 @@ package bangunruang;
 
 /**
  *
- * @author ASUS
+ * @author ASUS Toyib h.
  */
-public class Balok {
+public class Balok extends BangunRuang{
     
+    public double tinggi, lebar, panjang;
+    public double hitungVol() {
+        double vol = panjang * lebar * tinggi;
+        return vol;
+    }
+    
+    public double luas() {
+        
+        double luasp = 2 * ((panjang * lebar) + (lebar * tinggi) + (tinggi + panjang));
+        return luasp;
+    }
 }

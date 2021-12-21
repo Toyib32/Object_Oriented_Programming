@@ -7,8 +7,19 @@ package bangunruang;
 
 /**
  *
- * @author ASUS
+ * @author ASUS Toyib h. 
  */
-public class Tabung {
+public class Tabung extends BangunRuang{
     
+    public double jarijari, tinggi;
+    public double hitungVol() {
+        double volTabung = Math.PI * Math.pow(jarijari, 2) * tinggi;
+        return volTabung;
+    }
+
+    public double luas() {
+        double luasTabung = Math.PI * jarijari * (jarijari + (2 * tinggi));
+        return luasTabung;
+    }    
 }
+

@@ -7,8 +7,18 @@ package bangundatar;
 
 /**
  *
- * @author ASUS
+ * @author ASUS Toyib h. 
  */
-public class Lingkaran {
-    
+public class Lingkaran extends BangunDatar{
+
+    public double jarijari;
+    public double hitungLuas(){
+        double luas = Math.PI * jarijari * jarijari;
+        return luas;
+    }
+    public double hitungKeliling(){
+ 	  
+        double keliling = 2 * Math.PI * jarijari;
+        return keliling;
+    }
 }
