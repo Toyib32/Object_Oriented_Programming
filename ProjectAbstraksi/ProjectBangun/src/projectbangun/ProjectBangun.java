@@ -4,10 +4,12 @@
  * and open the template in the editor.
  */
 package projectbangun;
+import bangundatar.*;
+import bangunruang.*;
 
 /**
  *
- * @author ASUS
+ * @author ASUS Toyib h.
  */
 public class ProjectBangun {
 
@@ -17,59 +19,65 @@ public class ProjectBangun {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        //BangunDatar
+        //hitung luas, kel, dan vol BangunDatar
         Persegi pers = new Persegi();
         Lingkaran ling = new Lingkaran();
-        PersegiPanjang pp = new PersegiPanjang();
+        PersegiPanjang persPanj = new PersegiPanjang();
             
         Tabung tbg = new Tabung();
-        Balok b = new Balok();
-        Bola bl = new Bola();
+        Balok blk = new Balok();
+        Bola bla = new Bola();
             
-        //persegi
+        //hitung luas dan keliling persegi
         pers.sisi = 5;
-        System.out.println("\nPersegi dengan panjang sisi " + pers.sisi);
+        System.out.println("\n### PERSEGI ###");
+        System.out.println("Persegi dengan panjang sisi " + pers.sisi);
         pers.hitungLuas();
         pers.hitungKeliling();
         pers.tampilHasil();
             
-        //lingkaran
+        //hitung luas dan keliling lingkaran
         ling.jarijari = 10;
-        System.out.println("\nLingkaran dengan panjang jari - jari " + ling.jarijari);
+        System.out.println("\n### LINGKARAN ###");
+        System.out.println("Lingkaran dengan panjang jari - jari " + ling.jarijari);
         ling.hitungLuas();
         ling.hitungKeliling();
         ling.tampilHasil();
             
-        //persegi panjang
-        pp.lebar = 4;
-        pp.panjang = 5;
-        System.out.println("\nPersegi Panjang dengan panjang " + pp.panjang + " dan lebar " + pp.lebar);
-        pp.hitungLuas();
-        pp.hitungKeliling();
-        pp.tampilHasil();
+        //hitung luas dan keliling persegi panjang
+        persPanj.lebar = 4;
+        persPanj.panjang = 5;
+        System.out.println("\n### PERSEGI PANJANG ###");
+        System.out.println("Persegi Panjang dengan panjang " + persPanj.panjang + " dan lebar " + persPanj.lebar);
+        persPanj.hitungLuas();
+        persPanj.hitungKeliling();
+        persPanj.tampilHasil();
             
-        //tabung
+        //hitung luas dan vol tabung
         tbg.jarijari = 10;
         tbg.tinggi = 10;
-        System.out.println("\nTabung dengan panjang jari - jari " + tbg.jarijari + " dan tinggi " + tbg.tinggi);
-        tbg.hitungVolume();
-        tbg.hitungLuasPermukaan();
-        tbg.tampilHasil();
+        System.out.println("\n### TABUNG ###");
+        System.out.println("Tabung dengan panjang jari - jari " + tbg.jarijari + " dan tinggi " + tbg.tinggi);
+        tbg.hitungVol();
+        tbg.luas();
+        tbg.print();
             
-        //balok
-        b.lebar = 3;
-        b.panjang = 4;
-        b.tinggi = 5;
-        System.out.println("\nBalok dengan panjang " + b.panjang + ", lebar " + b.lebar + ", dan tinggi " + b.tinggi);
-        b.hitungVolume();
-        b.hitungLuasPermukaan();
-        b.tampilHasil();
+        //hitung luas dan vol balok
+        blk.lebar = 3;
+        blk.panjang = 4;
+        blk.tinggi = 5;
+        System.out.println("\n### BALOK ###");
+        System.out.println("Balok dengan panjang " + blk.panjang + ", lebar " + blk.lebar + ", dan tinggi " + blk.tinggi);
+        blk.hitungVol();
+        blk.luas();
+        blk.print();
             
-        //bola
-        bl.jarijari = 10;
-        System.out.println("\nBola dengan panjang jari - jari " + t.jarijari);
-        bl.hitungVolume();
-        bl.hitungLuasPermukaan();
-        bl.tampilHasil();
+        //hitung luas dan vol bola
+        bla.jarijari = 10;
+        System.out.println("\n### BOLA ###");
+        System.out.println("Bola dengan panjang jari - jari " + bla.jarijari);
+        bla.hitungVol();
+        bla.luas();
+        bla.print();
     }
 }

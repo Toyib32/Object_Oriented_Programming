@@ -7,7 +7,7 @@ package projectbangun;
 
 /**
  *
- * @author ASUS
+ * @author ASUS Toyib h.
  */
 public class MainClass {
     
