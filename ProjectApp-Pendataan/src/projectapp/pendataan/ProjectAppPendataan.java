@@ -5,9 +5,13 @@
  */
 package projectapp.pendataan;
 
+import projectapp.pendataan.Karyawan;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /**
  *
- * @author ASUS
+ * @author ASUS Toyib h.
  */
 public class ProjectAppPendataan {
 
@@ -16,6 +20,12 @@ public class ProjectAppPendataan {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    }
+        
+        static ArrayList<JenisKaryawan> dataKaryawan = new ArrayList<JenisKaryawan>();
+        static Scanner input = new Scanner(System.in);
     
+        public static void main(String[] args) {
+            Menu.Menu();
+        }
+    }
 }
