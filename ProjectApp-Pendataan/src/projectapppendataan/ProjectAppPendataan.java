@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package projectapp.pendataan;
+package projectapppendataan;
 
-import projectapp.pendataan.Karyawan;
+import projectapppendataan.Karyawan;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -14,18 +14,14 @@ import java.util.Scanner;
  * @author ASUS Toyib h.
  */
 public class ProjectAppPendataan {
-
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+
+    static ArrayList<Karyawan> dataKaryawan = new ArrayList<Karyawan>();
+    static Scanner input = new Scanner(System.in);
         
-        static ArrayList<JenisKaryawan> dataKaryawan = new ArrayList<JenisKaryawan>();
-        static Scanner input = new Scanner(System.in);
-    
-        public static void main(String[] args) {
-            Menu.Menu();
-        }
+    public static void main(String[] args) {
+        MainMenu.MainMenu();
     }
 }
