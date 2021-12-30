@@ -16,7 +16,7 @@ public abstract class KontrolDataKrywn {
     private String namaKary;
     private String alamat;
     private String tglLahir;
-    public abstract float gajipokok();
+    public abstract float gajiPokok();
     
     //kode karyawan
     public String gettingKodeKary() {
